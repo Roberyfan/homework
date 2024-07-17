@@ -1,0 +1,15 @@
+.first {
+    margin-top: 30px;
+    text-align: center;
+}
+.first img {
+    width: native;
+    height: native;
+
+}
+.first p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
