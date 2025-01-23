@@ -1,0 +1,18 @@
+.first {
+    height: 500px;
+    background-color: azure;
+    border: 5px;
+    border-radius: 20 0 0 20;
+    overflow: auto;
+}
+.second {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    padding: 20px;
+    background-color: rgb(147, 107, 58);
+    display: inline-block;
+    border: 8px;
+    border-radius: 30px;
+    box-shadow: -10px -5px 15px;
+}
