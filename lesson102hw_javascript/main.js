@@ -3,7 +3,7 @@ const robi = {
     age: 36,
     isAdmin: true,
     hello(data) {
-        Alert('Hello ${data}')
+        console.log('Hello ${data}')
     }
 }
 
