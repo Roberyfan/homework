@@ -3,9 +3,11 @@ const robi = {
     age: 36,
     isAdmin: true,
     hello(data) {
-        console.log('Hello ${data}')
+        Alert('Hello ${data}')
     }
 }
+
+robi.hello(Vadim)
 
 const users = [
     {
