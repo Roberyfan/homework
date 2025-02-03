@@ -2,12 +2,11 @@ const robi = {
     name: 'Robert',
     age: 36,
     isAdmin: true,
-    hello(nam) {
-        console.log('Hello ${nam}')
+    hello(data) {
+        console.log(`Hello ${data}`)
     }
 }
 
-robi.hello('Vadim')
 
 const users = [
     {
