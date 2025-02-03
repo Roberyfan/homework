@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.open {
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 250px;
+    height: 120px;
+    font-size: 24px;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #240808cc;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.7s;
+}
+
+.modal-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__window {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8d8888;
+    width: 400px;
+    height: 250px;
+}
+
+.close {
+    width: 150px;
+    height: 70px;
+    font-size: 24px;
+}
