@@ -7,7 +7,7 @@ const robi = {
     }
 }
 
-robi.hello(Vadim)
+robi.hello('Vadim')
 
 const users = [
     {
