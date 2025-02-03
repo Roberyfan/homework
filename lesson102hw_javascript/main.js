@@ -2,8 +2,8 @@ const robi = {
     name: 'Robert',
     age: 36,
     isAdmin: true,
-    hello(data) {
-        console.log('Hello ${data}')
+    hello(nam) {
+        console.log('Hello ${nam}')
     }
 }
 
