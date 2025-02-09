@@ -4,6 +4,7 @@
     --general-bg: #fff9f4;
     --accent-bg: #FFE0CB;
     --accent-color: #ffa55c;
+    --accent-color-2: #CEAAD0;
 }
 
 .body {
@@ -37,7 +38,9 @@
     padding: 140px 0;
 }
 
-.main__program, .main__gallery {
+.main__program, 
+.main__gallery,
+.main__testimonials {
     padding-bottom: 145px;
 }
 
