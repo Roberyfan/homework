@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diplom1</title>
+    <link href=".//css/reset.css" rel="stylesheet">
+    <link href=".//css/stylesheet.css" rel="stylesheet">
+    <link href=".//css/style.css" rel="stylesheet">
+</head>
+
+<body class="body">
+    <div class="wrapper">
+        <header>
+            <div class="header1">
+                <div class="container">
+                    <div class="header1__inner">
+                        <nav class="navi">
+                            <ul class="navi__list">
+                                <li class="navi__item">
+                                    <a href="#" class="navi__link navi__first">
+                                        ALL
+                                    </a>
+                                </li>
+                                <li class="navi__item">
+                                    <a href="#" class="navi__link">
+                                        FOOTWEAR
+                                    </a>
+                                </li>
+                                <li class="navi__item">
+                                    <a href="#" class="navi__link">
+                                        APPAREL
+                                    </a>
+                                </li>
+                                <li class="navi__item">
+                                    <a href="#" class="navi__link">
+                                        BASKETBALL
+                                    </a>
+                                </li>
+                                <li class="navi__item">
+                                    <a href="#" class="navi__link">
+                                        SLIDES
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="search">
+                            <img src=".//img/svg/search.svg" alt="">
+                            <input type="text" placeholder="SEARCH" class="header1__inp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header2">
+                <div class="container">
+                    <div class="header2__inner">
+                        <img src="./img/DAME .png" alt="" class="header2__max">
+                        <div class="header2__krug-box">
+                            <ul class="header2__krug-spisok">
+                                <li class="header2__krug header2__krug-active">
+                                </li>
+                                <li class="header2__krug">
+                                </li>
+                                <li class="header2__krug">
+                                </li>
+                                <li class="header2__krug">
+                                </li>
+                                <li class="header2__krug">
+                                </li>
+                            </ul>
+                        </div>
+                        <img src="./img/setka.png" alt="" class="header2__setka">
+                        <img src="./img/kros.png" alt="" class="header2__kros">
+                        <a class="header2__button" href="#">BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="section1">
+                <div class="container">
+                    <div class="section1__inner">
+                        <div class="section1__top">
+                            <p class="section1__text">Top Sellers</p>
+                            <div class="section1__filters">
+                                <div class="section1__filters-content">
+                                    <button onclick="togglebutton1()" class="section1__button button1">
+                                        FILTERS
+                                    </button>
+                                    <div class="section1__filters-vibor" id="filters-active">
+                                        <p><b>Price:</b><Br><Br>
+                                        from<input class="field__input" type="text" size="5"> <Br>
+                                        to<input class="field__input" type="text" size="5">
+                                        </p>
+                                        <div class="section1__filters-checkbox">
+                                            <b>Season:</b>
+                                            <br>
+                                            <br>
+                                            <p><input type="checkbox"> winter</p>
+                                            <br>
+                                            <p><input type="checkbox"> summer</p>
+                                            <br>
+                                            <p><input type="checkbox"> autumn</p>
+                                        </div>
+                                        <button class="section1__sumbit-button">Sumbit</button>
+                                    </div>
+                                </div>
+                                <div class="section1__sort">
+                                    <button onclick="togglebutton2()" class="section1__button button2">
+                                        SORT BY
+                                    </button>
+                                    <ul class="section1__spisok-sort" id="sort-active">
+                                        <li class="section1__li-sort">Popular</li>
+                                        <li class="section1__li-sort">Price (lower)</li>
+                                        <li class="section1__li-sort">Price (higher)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section1__kros"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
