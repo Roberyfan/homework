@@ -278,7 +278,61 @@ margin-bottom: 0;
     height: 25px;
 }
 
+.section1__kros {
+    margin-bottom: 70px;
+}
 
+.kros__slide {
+    display: flex;
+    flex-direction: column;
+    width: 402px;
+    height: 532px;
+    gap: 15px;
+}
+
+.slide__top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 377px;
+    width: 402px;
+    background: #f9f9f9;
+}
+
+.slide__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 402px;
+    height: 139px;
+    gap: 6px;
+}
+
+.title1 {
+font-size: 22px;
+line-height: 1.4;
+letter-spacing: 0.07em;
+color: #9c9c9c;
+}
+
+.title2 {
+font-size: 25px;
+line-height: 1.4;
+color: #040404;
+}
+
+.price {
+    font-size: 20px;
+line-height: 1.4;
+color: #040404;
+}
+
+.size {
+    font-size: 18px;
+line-height: 1.4;
+letter-spacing: 0.08em;
+color: #de343d;
+}
 
 /*============================*/
 

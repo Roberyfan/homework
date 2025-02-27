@@ -85,7 +85,7 @@
                             <p class="section1__text">Top Sellers</p>
                             <div class="section1__filters">
                                 <div class="section1__filters-content">
-                                    <button onclick="togglebutton1()" class="section1__button button1">
+                                    <button class="section1__button button1" id="btn-filter">
                                         FILTERS
                                     </button>
                                     <div class="section1__filters-vibor" id="filters-active">
@@ -107,7 +107,7 @@
                                     </div>
                                 </div>
                                 <div class="section1__sort">
-                                    <button onclick="togglebutton2()" class="section1__button button2">
+                                    <button class="section1__button button2" id="btn-sort">
                                         SORT BY
                                     </button>
                                     <ul class="section1__spisok-sort" id="sort-active">
@@ -118,15 +118,84 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="section1__kros"></div>
+                            <div class="kros__slider swiper">
+                                <div class="kros__wrapper swiper-wrapper">
+                                    <div class="kros__slide swiper-slide">
+                                        <div class="slide__top">
+                                            <img src=".//img/oroche.png" alt="">
+                                        </div>
+                                        <div class="slide__bottom">
+                                            <p class="title1">Nike</p>
+                                            <p class="title2">Air Force 1 Orche</p>
+                                            <p class="price">₹9,985</p>
+                                            <p class="size">Sizes: 8-10</p>
+                                        </div>
+                                    </div>
+                                    <div class="kros__slide swiper-slide">
+                                        <div class="slide__top">
+                                            <img src=".//img/panda.png" alt="">
+                                        </div>
+                                        <div class="slide__bottom">
+                                            <p class="title1">Nike</p>
+                                            <p class="title2">Air Force Panda</p>
+                                            <p class="price">₹19,655</p>
+                                            <p class="size">Sizes: 6-10</p>
+                                        </div>
+                                    </div>
+                                    <div class="kros__slide swiper-slide">
+                                        <div class="slide__top">
+                                            <img src=".//img/07.png" alt="">
+                                        </div>
+                                        <div class="slide__bottom">
+                                            <p class="title1">Nike</p>
+                                            <p class="title2">Air Force Panda</p>
+                                            <p class="price">₹15,750</p>
+                                            <p class="size">Sizes: 9-12</p>
+                                        </div>
+                                    </div>
+                                    <div class="kros__slide swiper-slide">
+                                        <div class="slide__top">
+                                            <img src=".//img/327.png" alt="">
+                                        </div>
+                                        <div class="slide__bottom">
+                                            <p class="title1">New Balance</p>
+                                            <p class="title2">327’ Munsell White</p>
+                                            <p class="price">₹11,999</p>
+                                            <p class="size">Sizes: 7-11</p>
+                                        </div>
+                                    </div>
+                                    <div class="kros__slide swiper-slide">
+                                        <div class="slide__top">
+                                            <img src=".//img/panda.png" alt="">
+                                        </div>
+                                        <div class="slide__bottom">
+                                            <p class="title1">Nike</p>
+                                            <p class="title2">Air Force Panda</p>
+                                            <p class="price">₹19,655</p>
+                                            <p class="size">Sizes: 6-10</p>
+                                        </div>
+                                    </div>
+                                    <div class="kros__slide swiper-slide">
+                                        <div class="slide__top">
+                                            <img src=".//img/oroche.png" alt="">
+                                        </div>
+                                        <div class="slide__bottom">
+                                            <p class="title1">Nike</p>
+                                            <p class="title2">Air Force 1 Orche</p>
+                                            <p class="price">₹9,985</p>
+                                            <p class="size">Sizes: 8-10</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </section>
         </main>
         <footer></footer>
     </div>
+    <script src="swiper-bundle.min.js"></script>
     <script src="main.js"></script>
-
 </body>
 
 </html>

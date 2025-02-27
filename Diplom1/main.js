@@ -9,21 +9,44 @@ spisok.addEventListener("mouseover", (e) => {
 
         target.classList.add("header2__krug-active");
     }
-})
+});
 
-function togglebutton1() {
-    document.getElementById("filters-active").classList.toggle("section1__filters-vibor--active");
-}
+//Фильтры
 
-function togglebutton2() {
-    document.getElementById("sort-active").classList.toggle("section1__spisok-sort--show");
-}
+    const btnFilter = document.getElementById('btn-filter');
+    const filtersActive = document.getElementById('filters-active');
+    const btnSort = document.getElementById('btn-sort');
+    const sortActive = document.getElementById('sort-active');
 
-const filters = document.getElementById("filters-active");
+    function toggleFilters() {
+        filtersActive.classList.toggle('section1__filters-vibor--active');
+    }
 
-filters.addEventListener ('click', (e) => {
-    const wind = e.target.closest('filters');
-if (!wind) {
-    filters.classList.remove("section1__filters-vibor--active")
-    console.log(wind);
-}})
+    function toggleSort() {
+        sortActive.classList.toggle('section1__spisok-sort--show')
+    }
+
+    function closefilters(event) {
+        if (!filtersActive.contains(event.target) && !btnFilter.contains(event.target)) {
+            filtersActive.classList.remove("section1__filters-vibor--active")
+        }
+    }
+
+    function closeSort(e) {
+        if (!sortActive.contains(e.target) && !btnSort.contains(e.target)) {
+            sortActive.classList.remove("section1__spisok-sort--show")
+        }
+    }
+
+    btnFilter.addEventListener("click", toggleFilters);
+    document.addEventListener("click", closefilters);
+    btnSort.addEventListener("click", toggleSort);
+    document.addEventListener("click", closeSort);
+
+    new Swiper('.kros__slider', {
+
+        spaceBetween: 40,
+        slidesPerView: 4,
+
+
+    });
