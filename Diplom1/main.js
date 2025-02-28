@@ -47,6 +47,5 @@ spisok.addEventListener("mouseover", (e) => {
 
         spaceBetween: 40,
         slidesPerView: 4,
-
-
+        
     });
