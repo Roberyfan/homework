@@ -1,3 +1,6 @@
+
+//Перещелкиватель
+
 const spisok = document.querySelector(".header2__krug-spisok");
 const krug = document.querySelectorAll(".header2__krug")
 spisok.addEventListener("mouseover", (e) => {
@@ -43,9 +46,108 @@ spisok.addEventListener("mouseover", (e) => {
     btnSort.addEventListener("click", toggleSort);
     document.addEventListener("click", closeSort);
 
+// Слайдер
+
     new Swiper('.kros__slider', {
 
         spaceBetween: 40,
-        slidesPerView: 4,
+        slidesPerView: 1,
         
+        navigation: {
+            nextEl: '.button__right',
+            prevEl: '.button__left',
+        },
+
+        breakpoints: {
+            1801: {
+                slidesPerView: 4,
+            },
+
+            1451: {
+                slidesPerView: 3,
+            },
+
+            1001: {
+                slidesPerView: 2,
+            },
+        }
+
     });
+
+    //Фильтры низ
+
+    const btnFilterBot = document.getElementById('btn-filter--bot');
+    const filtersActiveBot = document.getElementById('filters-active--bot');
+    const btnSortBot = document.getElementById('btn-sort--bot');
+    const sortActiveBot = document.getElementById('sort-active--bot');
+
+    function toggleFiltersBot() {
+        filtersActiveBot.classList.toggle('section1__filters-vibor--active');
+    }
+
+    function toggleSortBot() {
+        sortActiveBot.classList.toggle('section1__spisok-sort--show')
+    }
+
+    function closefiltersBot(event) {
+        if (!filtersActiveBot.contains(event.target) && !btnFilterBot.contains(event.target)) {
+            filtersActiveBot.classList.remove("section1__filters-vibor--active")
+        }
+    }
+
+    function closeSortBot(e) {
+        if (!sortActiveBot.contains(e.target) && !btnSortBot.contains(e.target)) {
+            sortActiveBot.classList.remove("section1__spisok-sort--show")
+        }
+    }
+
+    btnFilterBot.addEventListener("click", toggleFiltersBot);
+    document.addEventListener("click", closefiltersBot);
+    btnSortBot.addEventListener("click", toggleSortBot);
+    document.addEventListener("click", closeSortBot);
+
+    // кроссовки низ
+
+    const buttonSee = document.querySelector('.section3__see');
+    const bottomBut = document.querySelector('.section3__bottom');
+    const krosNone = document.querySelectorAll('.kros__slide--none');
+    const krosPr = document.querySelectorAll('.kros__slide--pr');
+
+    buttonSee.addEventListener('click', () => {
+        krosPr.forEach((bb) => bb.classList.remove("kros__slide--pr"));
+        krosNone.forEach((df) => df.classList.remove("kros__slide--none"));
+        bottomBut.classList.add("section3__bottom--h");
+    })
+
+    const column = document.querySelector('.column');
+    const grid = document.querySelector('.grid');
+    const column_path = document.getElementById('column-path');
+    const grid_path = document.getElementById('grid-path');
+    const bottom_grid = document.getElementById('bottom-grid');
+    const slide__bottom = bottom_grid.querySelectorAll('.kros__slide')
+
+    column.addEventListener('click', () => {
+        if (bottom_grid.classList.contains('section3__grid-column')) return
+
+        else {
+            column_path.setAttribute('fill', '#040404')
+            grid_path.setAttribute('fill', '#808080')
+            bottom_grid.classList.add('section3__grid-column')
+            bottom_grid.classList.remove('section3__grid')
+            slide__bottom.forEach((tt) => tt.classList.add('kros__slide-row'));
+
+        }
+    })
+
+    grid.addEventListener('click', () => {
+
+        if (bottom_grid.classList.contains('section3__grid')) return
+
+        else {
+            column_path.setAttribute('fill', '#808080')
+            grid_path.setAttribute('fill', '#040404')
+            bottom_grid.classList.add('section3__grid')
+            bottom_grid.classList.remove('section3__grid-column')
+            slide__bottom.forEach((ee) => ee.classList.remove('kros__slide-row'));
+        }
+    })
