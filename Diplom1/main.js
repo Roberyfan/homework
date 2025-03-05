@@ -1,4 +1,22 @@
 
+//Меню
+
+const nav_mobile = document.querySelector('.nav__mobile');
+const navi = document.getElementById('nav__ww');
+
+function toggleNav() {
+    navi.classList.toggle('navi__mob');
+}
+
+function closeNav(ww) {
+    if (!nav_mobile.contains(ww.target) && !navi.contains(ww.target)) {
+        navi.classList.remove('navi__mob')
+    }
+}
+
+nav_mobile.addEventListener('click', toggleNav);
+document.addEventListener("click", closeNav);
+
 //Перещелкиватель
 
 const spisok = document.querySelector(".header2__krug-spisok");
@@ -59,15 +77,15 @@ spisok.addEventListener("mouseover", (e) => {
         },
 
         breakpoints: {
-            1801: {
+            1601: {
                 slidesPerView: 4,
             },
 
-            1451: {
+            1251: {
                 slidesPerView: 3,
             },
 
-            1001: {
+            801: {
                 slidesPerView: 2,
             },
         }
