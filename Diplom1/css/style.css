@@ -45,7 +45,7 @@
 }
 
 .navi__mob {
-display: block;
+display: block !important;
 }
 
 .nav__mobile {
@@ -761,9 +761,6 @@ display: block;
         display: flex;
     }
 
-    .navi__mob {
-        display: block ;
-        }
 
     .navi {
         display: none;
