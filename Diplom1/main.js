@@ -8,8 +8,8 @@ function toggleNav() {
     navi.classList.toggle('navi__mob');
 }
 
-function closeNav(ww) {
-    if (!nav_mobile.contains(ww.target) && !navi.contains(ww.target)) {
+function closeNav(uu) {
+    if (!nav_mobile.contains(uu.target) && !navi.contains(uu.target)) {
         navi.classList.remove('navi__mob')
     }
 }

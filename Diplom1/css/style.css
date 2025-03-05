@@ -45,7 +45,7 @@
 }
 
 .navi__mob {
-    display: block;
+display: block;
 }
 
 .nav__mobile {
@@ -194,7 +194,6 @@
 
 .section1 {
     padding: 84px 95px 154px 96px;
-    height: 986px;
 }
 
 
@@ -562,7 +561,7 @@
     display: grid;
     grid-template-columns: 1.3fr 1.4fr 1fr;
     grid-template-rows: auto auto;
-    gap: 47px 0;
+    gap: 47px 8px;
 }
 
 .footer__text {
@@ -723,7 +722,7 @@
     }
 
     .footer__inner {
-        padding: 108px 46px 108px 0;
+        padding: 108px 10px 108px 10px;
     }
 }
 
@@ -731,6 +730,14 @@
     .section1__top {
         flex-direction: column;
         gap: 18px;
+    }
+
+    .button__left {
+        top: 370px;
+    }
+    
+    .button__right {
+        top: 370px;
     }
 
     .section3__filt {
@@ -754,11 +761,15 @@
         display: flex;
     }
 
+    .navi__mob {
+        display: block ;
+        }
+
     .navi {
         display: none;
         position: absolute;
-        top: 41px;
-        left: 71px;
+        top: 30px;
+        left: 80px;
         background: #fff;
         padding: 5px;
         border: 2px solid #040404;
@@ -789,6 +800,10 @@
         left: 15vw;
     }
 
+    .section1__filters-vibor {
+        left: -75px;
+    }
+
     .section2__top {
         gap: 37px;
     }
@@ -796,5 +811,104 @@
     .section2__logos {
         margin-left: 12vw;
         margin-right: 18vw;
+    }
+
+    .kros__slide-row {
+        flex-direction: column;
+    }
+
+    .kros__slide {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .header2__krug-box {
+        top: 510px;
+    }
+
+    .header2__setka {
+        width: 270px;
+        height: auto;
+        left: 4vw;
+    }
+
+    .header2__kros {
+        width: 350px;
+        height: auto;
+        left: 0vw;
+    }
+
+    .header2__button {
+        top: 630px;
+        left: calc(100vw - 190px);
+        width: 160px;
+        height: 44px;
+        font-size: 14px;
+        line-height: 2.5;
+    }
+
+    .section1__filters {
+        flex-direction: column;
+    }
+
+    .button__left svg {
+        width: 41px;
+        height: 41px;
+    }
+    
+    .button__right svg {
+        width: 41px;
+        height: 41px;
+    }
+
+    .slide__top {
+        height: 217px;
+    }
+
+    .title1 {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    
+    .title2 {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    
+    .price {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+    
+    .size {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+
+    .section1__see {
+        padding: 4px 15px;
+        font-size: 14px;
+    }
+
+    .section3__grid {
+        margin: 0 30px;
+    }
+
+    .section3__see {
+        padding: 4px 15px;
+        font-size: 14px;
+    }
+
+    .footer__text {
+        font-weight: 800;
+        font-size: 15px;
+    }
+    
+    
+    .footer__ssilka {
+        font-size: 12px;
     }
 }
